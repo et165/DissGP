@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="988.0" prefWidth="1493.0" style="-fx-background-color: #ffffff#;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CreateAccountController">
+   <children>
+      <AnchorPane prefHeight="1002.0" prefWidth="417.0" style="-fx-background-color: #2E2E2E;">
+         <children>
+            <AnchorPane layoutX="45.0" layoutY="146.0" prefHeight="89.0" prefWidth="332.0" style="-fx-background-color: #2E2E2E;" />
+            <AnchorPane layoutX="40.0" layoutY="141.0" prefHeight="99.0" prefWidth="342.0" style="-fx-background-color: #FFFFFF;" />
+            <Label alignment="CENTER" layoutX="94.0" layoutY="42.0" text="Create Your Account" textFill="WHITE" underline="true" AnchorPane.leftAnchor="94.0">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="258.0" text="Create Username:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="303.0" text="Create Password:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="VideoButton" layoutX="71.0" layoutY="949.0" mnemonicParsing="false" onAction="#LoadTut" style="-fx-background-color: #FFFFFF;" text="TUTORIAL" />
+            <Button fx:id="FinishButton" layoutX="187.0" layoutY="648.0" mnemonicParsing="false" onAction="#bkButton" style="-fx-background-color: #FFFFFF;" text="FINISH" />
+            <Label fx:id="notify" layoutX="53.0" layoutY="159.0" text="NO STYLE SELECTED" textFill="RED">
+               <font>
+                  <Font name="Consolas Bold" size="33.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="54.0" layoutY="738.0" prefHeight="201.0" prefWidth="318.0" text="Please select ONE image on the right hand side of the &#10;screen, then a DIRECTION below. When logging in you&#10;will select the image that corrilates to the direction &#10;of the image you selected here. If there is no image&#10;North or South of your selected Image, carry on over&#10;the grid and select the image following. SELECTING YES&#10;to the above question will move your correct login by&#10;2 squares in the direction chosen instead of 1. This &#10;feature is only accessable to NORTH and SOUTH. More&#10;information is on the video tutorial below - please watch!&#10;" />
+            <TextField fx:id="CreateUSER" layoutX="196.0" layoutY="255.0" promptText="Create Username..." />
+            <PasswordField fx:id="CreatePASS" layoutX="197.0" layoutY="302.0" promptText="Create Password..." />
+            <Label layoutX="49.0" layoutY="270.0" text="________________________________________________" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="317.0" text="________________________________________________" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="North" layoutX="180.0" layoutY="426.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="North" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="South" layoutX="180.0" layoutY="466.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="South" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Label alignment="CENTER" layoutX="124.0" layoutY="109.0" text="Current Selected:" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="140.0" layoutY="699.0" text="Instructions" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="East" layoutX="283.0" layoutY="426.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="East" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="West" layoutX="105.0" layoutY="466.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="West" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="NW" layoutX="106.0" layoutY="426.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="N/W" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="SE" layoutX="285.0" layoutY="466.0" mnemonicParsing="false" onAction="#toggleDirectionbuttonChanged" text="S/E" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="60.0" layoutY="353.0" text="Email (Optional)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="368.0" text="________________________________________________" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CreateEMAIL" layoutX="197.0" layoutY="351.0" promptText="Enter Email.." />
+            <Label layoutX="72.0" layoutY="509.0" text="Move by 2 spaces instead of 1? (N &amp; S ONLY)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="YesExtra" layoutX="165.0" layoutY="548.0" mnemonicParsing="false" onAction="#ToggleExtra" text="YES" textFill="WHITE" />
+            <RadioButton fx:id="NoExtra" layoutX="237.0" layoutY="548.0" mnemonicParsing="false" onAction="#ToggleExtra" text="NO" textFill="WHITE" />
+            <Label layoutX="72.0" layoutY="515.0" text="________________________________________________" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="EXIT" layoutX="277.0" layoutY="949.0" mnemonicParsing="false" onAction="#EXIT" style="-fx-background-color: #FFFFFF;" text="GO BACK" />
+            <TextField fx:id="CreatePIN" layoutX="219.0" layoutY="602.0" promptText="Enter Security Question..." />
+            <Label layoutX="46.0" layoutY="604.0" text="Enter your recovery pin:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="617.0" text="____________________________________________________" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="459.0" layoutY="27.0" prefHeight="932.0" prefWidth="1009.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ToggleButton fx:id="Option2" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option1" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option3" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(3).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option4" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="3">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(4).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option5" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(5).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option9" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(9).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option6" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(6).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option7" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(7).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option8" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(8).png" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="Option10" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(10).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option11" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(11).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option12" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(12).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option13" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(13).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option14" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(14).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option15" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(15).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="Option16" mnemonicParsing="false" onAction="#togglebuttonChanged" prefHeight="203.0" prefWidth="222.0" style="-fx-background-color: #2E2E2E;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@STYLE%20(16).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

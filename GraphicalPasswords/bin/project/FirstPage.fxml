@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E2E2E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MainController">
+   <children>
+      <AnchorPane layoutX="281.0" prefHeight="407.0" prefWidth="321.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label id="lable1" fx:id="lable1" layoutX="46.0" layoutY="150.0" text="Username:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label id="lable2" fx:id="lable2" layoutX="48.0" layoutY="204.0" text="Password:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pass" layoutX="139.0" layoutY="208.0" promptText="Enter Password..." />
+            <TextField fx:id="text1" layoutX="140.0" layoutY="152.0" promptText="Enter Username..." />
+            <Button fx:id="rulesbtn" layoutX="119.0" layoutY="294.0" mnemonicParsing="false" onAction="#RulesLeftClick" style="-fx-background-color: #2E2E2E;" text="Create Account" textFill="WHITE" />
+            <Button fx:id="donebtn" layoutX="145.0" layoutY="254.0" mnemonicParsing="false" onAction="#DoneButtonPressed" style="-fx-background-color: #2E2E2E;" text="Done" textFill="WHITE" />
+            <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@YMiNHCM%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <Label id="lable1" fx:id="lable11" layoutX="14.0" layoutY="74.0" text="Welcome Back,">
+               <font>
+                  <Font name="Franklin Gothic Book Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label id="lable1" fx:id="lable111" layoutX="15.0" layoutY="97.0" text="Sign in to Continue...">
+               <font>
+                  <Font name="Franklin Gothic Book Italic" size="10.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="43.0" layoutY="14.0" prefHeight="287.0" prefWidth="257.0">
+         <children>
+            <Label fx:id="WELCOME" alignment="CENTER" layoutX="6.0" layoutY="133.0" prefHeight="125.0" prefWidth="177.0" text="GCP" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="MT Extra" size="83.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="89.0" layoutX="55.0" layoutY="61.0">
+               <image>
+                  <Image url="@YMiNHCM.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="WELCOME11" alignment="CENTER" layoutX="12.0" layoutY="197.0" prefHeight="125.0" prefWidth="177.0" text="Graphical Cyber Passwords" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="passwordRecovBtn" layoutX="35.0" layoutY="292.0" mnemonicParsing="false" onAction="#RulesRightClick" style="-fx-background-color: #FFFFFF;" text="Forgotten Passwords?" textFill="#171717" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CorrectController">
+   <children>
+      <Text layoutX="110.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct Login for:">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="usernameplace" layoutX="320.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username_place">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="QuitButton" layoutX="289.0" layoutY="282.0" mnemonicParsing="false" onAction="#QuitButtonPressed" style="-fx-background-color: #2E2E2E;" text="Quit" textFill="WHITE" />
+      <Text layoutX="203.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REMINDER:">
+         <font>
+            <Font name="Consolas Bold" size="46.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="148.0" layoutY="140.0" prefHeight="123.0" prefWidth="320.0" style="-fx-background-color: #2E2E2E;" text="Please reset your image after roughly 3-5 login attempt&#10;as once a shoulder surfer monitors several logins they&#10;may be able to correctly guess your graphical password.&#10;In order to reduce this - a feature was created on the&#10;home page so that you may reset your image whenever&#10;you may see fit - please make use of this feature." />
+      <Text layoutX="-71.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="______________________________">
+         <font>
+            <Font name="Consolas Bold" size="46.0" />
+         </font>
+      </Text>
+      <Text layoutX="-79.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="______________________________" wrappingWidth="812.73046875">
+         <font>
+            <Font name="Consolas Bold" size="46.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
